@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  height: 500px;
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.slides{
+  position: relative;
+  width: calc(350px*5);
+  height: 500px;
+  display: flex;
+}
+img{
+  height: 100%;
+  width: 350px;
+  animation: slide 8s ease-out infinite;
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  15%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(calc(-350px*1));
+  }
+  40%{
+    transform: translateX(calc(-350px*1));
+  }
+  50%{
+    transform: translateX(calc(-350px*2));
+  }
+  65%{
+    transform: translateX(calc(-350px*2));
+  }
+  75%{
+    transform: translateX(calc(-350px*3));
+  }
+  90%{
+    transform: translateX(calc(-350px*3));
+  }
+  100%{
+    transform: translateX(calc(-350px*4));
+  }
+}
